@@ -11,7 +11,7 @@ from odoo.tools import float_is_zero, float_compare, float_round, format_date, g
 
 class Report(models.Model):
     _name = 'report'
-    _inherit = ['portal.mixin', 'product.catalog.mixin', 'mail.thread', 'mail.activity.mixin', 'utm.mixin']
+    _inherit = ['portal.mixin', 'mail.thread', 'mail.activity.mixin', 'utm.mixin']
     _description = "Reports"
     _order = 'date_order desc, id desc'
 
